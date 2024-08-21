@@ -65,8 +65,7 @@ jobs:
              - name: Run Test with Maven
     run: mvn -B test
 
-
-  sonar:
+sonar:
   needs: test
   runs-on: ubuntu-latest
   steps:
