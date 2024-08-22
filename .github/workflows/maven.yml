@@ -66,7 +66,7 @@ jobs:
   snyk:
     needs: test
     runs-on: ubuntu-latest
-    step:
+    steps:
       - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/maven@master
